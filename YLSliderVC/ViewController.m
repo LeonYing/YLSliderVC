@@ -27,7 +27,6 @@
     [_SliderVC.containView addSubview:Btn];
     
     [Btn addTarget:self action:@selector(clickMenuBtn) forControlEvents:UIControlEventTouchUpInside];
-    
 }
 
 - (BOOL)prefersStatusBarHidden

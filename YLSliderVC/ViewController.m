@@ -25,6 +25,7 @@
     UIButton *Btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
     [Btn setBackgroundColor:[UIColor redColor]];
     [_SliderVC.containView addSubview:Btn];
+    
     [Btn addTarget:self action:@selector(clickMenuBtn) forControlEvents:UIControlEventTouchUpInside];
     
 }

@@ -10,11 +10,12 @@
 
 @interface YLSliderViewController : UIViewController
 
-@property (nonatomic, strong) UIView *containView;
-@property (nonatomic, strong) UIView *sliderView;
-@property (nonatomic, assign) BOOL SliderIsHidden;
+@property (nonatomic, strong) UIView *containView ;
+@property (nonatomic, strong) UIView *sliderView ;
+@property (nonatomic, assign) BOOL SliderIsHidden ;
 
 - (instancetype)init ;
+- (void)setUpContainView:(UIView *)containView ;
 - (void)showSliderView ;
 - (void)hideSliderView ;
 

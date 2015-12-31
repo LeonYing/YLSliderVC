@@ -18,21 +18,14 @@
 
 @implementation YLSliderViewController
 
-
 - (instancetype)init {
     self = [super init];
     if (!self) return nil;
-    _containView = [[UIView alloc] init];;
-    _containView.backgroundColor = [UIColor blueColor];
-    _containView.layer.contents = (id)[UIImage imageNamed:@"topBg"].CGImage;
     
     _sliderView = [[UIView alloc] init];
     _sliderView.backgroundColor = [UIColor grayColor];
     _sliderView.layer.contents = (id)[UIImage imageNamed:@"sliderBg"].CGImage;
     [self.view addSubview:_sliderView];
-    [self.view addSubview:_containView];
-    _pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(HandlePan:)];
-    [self.containView addGestureRecognizer:_pan];
     
     self.SliderIsHidden = YES;
     
@@ -40,15 +33,37 @@
         make.left.equalTo(self.view.mas_left);
         make.width.equalTo(@(200));
         make.height.equalTo(self.view.mas_height);
-    }];
-    
-    [self.containView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.view.mas_left);
-        make.width.equalTo(self.view);
-        make.top.equalTo(self.view);
-        make.height.equalTo(self.view.mas_height);
+        make.centerY.equalTo(self.view);
     }];
     return self;
+}
+
+- (void)setUpContainView:(UIView *)containView{
+    _containView = containView;
+    
+    _pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(HandlePan:)];
+    [self.containView addGestureRecognizer:_pan];
+    
+    [self.view addSubview:_containView];
+    if (!self.SliderIsHidden) {
+        [self.view setNeedsUpdateConstraints];
+        [self.containView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self.view.mas_left).offset(200);
+            make.width.equalTo(self.view);
+            make.top.equalTo(self.view);
+            make.height.equalTo(self.view.mas_height);
+        }];
+        [self.view layoutIfNeeded];
+        [self hideSliderView];
+    }
+    else{
+        [self.containView mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self.view.mas_left);
+            make.width.equalTo(self.view);
+            make.top.equalTo(self.view);
+            make.height.equalTo(self.view.mas_height);
+        }];
+    }
 }
 
 - (void)showSliderView{
@@ -70,7 +85,10 @@
 - (void)hideSliderView{
     [self.view setNeedsUpdateConstraints];
     [self.containView mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.view);
+        make.left.equalTo(self.view.mas_left);
+        make.width.equalTo(self.view);
+        make.top.equalTo(self.view);
+        make.height.equalTo(self.view.mas_height);
     }];
     [UIView animateWithDuration:0.5 animations:^{
         [self.view layoutIfNeeded];

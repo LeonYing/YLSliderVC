@@ -16,12 +16,14 @@
     self.view.backgroundColor = [UIColor grayColor];
     UIButton *btn = [[UIButton alloc] init];
     [btn setBackgroundColor:[UIColor purpleColor]];
+    [btn addTarget:self action:@selector(clilkBtn) forControlEvents:UIControlEventTouchUpInside];
+    
     [self.view addSubview:btn];
     [btn makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(self.view);
         make.width.height.equalTo(100);
     }];
-    [btn addTarget:self action:@selector(clilkBtn) forControlEvents:UIControlEventTouchUpInside];
+    
     
 }
 

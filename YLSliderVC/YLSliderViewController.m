@@ -260,10 +260,11 @@ UITableViewDataSource
         [sliderVcInfo.navigationController.view makeConstraints:^(MASConstraintMaker *make) {
             make.edges.equalTo(self.containView);
         }];
+        [self.containView layoutIfNeeded];
         num++;
         NSLog(@"num:%lu",num);
     }
-    [self.containView bringSubviewToFront:self.navigationController.view];
+    [self.containView bringSubviewToFront:sliderVcInfo.navigationController.view];
     self.currentChildVcInfo = sliderVcInfo;
     [self showSliderView:NO];
 }

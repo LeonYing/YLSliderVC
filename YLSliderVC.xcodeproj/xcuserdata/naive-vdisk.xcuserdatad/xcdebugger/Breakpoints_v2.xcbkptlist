@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "YLSliderVC/YLSliderViewController.m"
-            timestampString = "474292750.599522"
+            timestampString = "474309827.187617"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "125"
-            endingLineNumber = "125"
-            landmarkName = "-HandleWithTouchEnd"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "-HandleWithTouchEnd:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

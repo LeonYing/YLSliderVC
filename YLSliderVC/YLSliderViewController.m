@@ -17,12 +17,15 @@
 
 #define KSliderAnimateDuration 0.3
 
+#define KPanVelocityXAnimationThreshold 200
+
 #define KSliderReuseIdentifier @"SliderCellReuseIdentifier"
 
 @interface YLSliderViewController ()
 <
 UITableViewDelegate,
-UITableViewDataSource
+UITableViewDataSource,
+UIGestureRecognizerDelegate
 >
 
 
@@ -102,18 +105,8 @@ UITableViewDataSource
 
 - (void)addGestureRecognizer{
     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
+    pan.delegate = self;
     [self.containView addGestureRecognizer:pan];
-    
-    UISwipeGestureRecognizer * swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipe:)];
-    swipeRight.direction = UISwipeGestureRecognizerDirectionRight;
-    [self.containView addGestureRecognizer:swipeRight];
-    
-    UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipe:)];
-    swipeLeft.direction = UISwipeGestureRecognizerDirectionLeft;
-    [self.containView addGestureRecognizer:swipeLeft];
-    
-//    [pan requireGestureRecognizerToFail:swipeLeft];
-//    [pan requireGestureRecognizerToFail:swipeRight];
     
 }
 
@@ -122,8 +115,13 @@ UITableViewDataSource
     return self.currentChildVcInfo.navigationController.viewControllers.count <= 1;
 }
 
-- (void)HandleWithTouchEnd{
-    if (!self.sliderIsShow) {
+- (void)HandleWithTouchEnd:(CGFloat)xVelocity{
+    if (fabs(xVelocity) > KPanVelocityXAnimationThreshold) {
+        BOOL showSlider = xVelocity > 0 ? YES : NO;
+        [self showSliderView:showSlider];
+        
+    }
+    else if (!self.sliderIsShow) {
         if ((_lastOffset>=KSliderShowWidth)&&(!self.sliderIsShow)) {
             [self showSliderView:YES];
         }else{
@@ -139,10 +137,10 @@ UITableViewDataSource
 }
 
 - (void)handlePan:(UIPanGestureRecognizer *)recognizer{
-    if (![self usePan])return;
     
     CGFloat offset = [recognizer translationInView:self.containView].x;
     [recognizer setTranslation:CGPointZero inView:self.containView];
+    CGFloat xVelocity = [recognizer velocityInView:self.containView].x;
     CGFloat realOffset = _lastOffset + offset;
     if (realOffset >= 0 && realOffset <= KSliderViewWidth) {
         _lastOffset = realOffset;
@@ -151,25 +149,10 @@ UITableViewDataSource
         }];
     }
     if (recognizer.state == UIGestureRecognizerStateEnded) {
-        [self HandleWithTouchEnd];
+        [self HandleWithTouchEnd:xVelocity];
     }
-    
 }
 
-- (void)handleSwipe:(UISwipeGestureRecognizer *)recognizer{
-    if (![self usePan])return;
-    switch (recognizer.direction) {
-        case UISwipeGestureRecognizerDirectionLeft:
-            [self showSliderView:NO];
-            break;
-        case UISwipeGestureRecognizerDirectionRight:
-            [self showSliderView:YES];
-            break;
-            
-        default:
-            break;
-    }
-}
 
 - (void)showSliderView:(BOOL)show{
     [self.view setNeedsUpdateConstraints];
@@ -182,6 +165,16 @@ UITableViewDataSource
         [self.view layoutIfNeeded];
     }];
 }
+
+#pragma mark -  UIGestureRecognizerDelegate
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch{
+    NSLog(@"shouldReceiveTouch");
+    if (![self usePan])
+        return NO;
+    return YES;
+}
+
 
 #pragma mark - 懒加载
 - (YLTableView *)sliderView{

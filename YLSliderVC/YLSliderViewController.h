@@ -8,15 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YLSliderViewController : UIViewController
+@interface YLSliderViewController : YLViewController
 
-@property (nonatomic, strong) UIView *containView ;
-@property (nonatomic, strong) UIView *sliderView ;
-@property (nonatomic, assign) BOOL SliderIsHidden ;
 
-- (instancetype)init ;
-- (void)setUpContainView:(UIView *)containView ;
-- (void)showSliderView ;
-- (void)hideSliderView ;
+
 
 @end

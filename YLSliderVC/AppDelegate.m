@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "YLSliderViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, SCREEN_W, SCREEN_H)];
+    YLSliderViewController *vc = [[YLSliderViewController alloc] init];
+    
+    self.window.rootViewController = vc;
+    [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
 

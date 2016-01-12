@@ -9,13 +9,9 @@
 /* Begin PBXBuildFile section */
 		E64EB6991C33CEC5009CA3B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E64EB6981C33CEC5009CA3B2 /* main.m */; };
 		E64EB69C1C33CEC5009CA3B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E64EB69B1C33CEC5009CA3B2 /* AppDelegate.m */; };
-		E64EB69F1C33CEC5009CA3B2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E64EB69E1C33CEC5009CA3B2 /* ViewController.m */; };
-		E64EB6A21C33CEC5009CA3B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E64EB6A01C33CEC5009CA3B2 /* Main.storyboard */; };
 		E64EB6A41C33CEC5009CA3B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E64EB6A31C33CEC5009CA3B2 /* Assets.xcassets */; };
-		E64EB6A71C33CEC5009CA3B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E64EB6A51C33CEC5009CA3B2 /* LaunchScreen.storyboard */; };
 		E64EB6B21C33CEC5009CA3B2 /* YLSliderVCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E64EB6B11C33CEC5009CA3B2 /* YLSliderVCTests.m */; };
 		E64EB6BD1C33CEC5009CA3B2 /* YLSliderVCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E64EB6BC1C33CEC5009CA3B2 /* YLSliderVCUITests.m */; };
-		E64EB6E71C33D50C009CA3B2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E64EB6CD1C33D50C009CA3B2 /* Info.plist */; };
 		E64EB6E81C33D50C009CA3B2 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E64EB6CF1C33D50C009CA3B2 /* MASCompositeConstraint.m */; };
 		E64EB6E91C33D50C009CA3B2 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E64EB6D21C33D50C009CA3B2 /* MASConstraint.m */; };
 		E64EB6EA1C33D50C009CA3B2 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = E64EB6D41C33D50C009CA3B2 /* MASConstraintMaker.m */; };
@@ -27,6 +23,12 @@
 		E64EB6F01C33D50C009CA3B2 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E64EB6E31C33D50C009CA3B2 /* View+MASAdditions.m */; };
 		E64EB6F11C33D50C009CA3B2 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E64EB6E61C33D50C009CA3B2 /* ViewController+MASAdditions.m */; };
 		E64EB6F71C33E86C009CA3B2 /* YLSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E64EB6F61C33E86C009CA3B2 /* YLSliderViewController.m */; };
+		E6610C7F1C44C1B3008A8B2D /* YLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6610C7E1C44C1B3008A8B2D /* YLViewController.m */; };
+		E6610C841C44C6B2008A8B2D /* YLView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6610C831C44C6B2008A8B2D /* YLView.m */; };
+		E6610C871C44C78F008A8B2D /* YLTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6610C861C44C78F008A8B2D /* YLTableView.m */; };
+		E6610C8E1C44E4C3008A8B2D /* YLSliderVcInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E6610C8D1C44E4C3008A8B2D /* YLSliderVcInfo.m */; };
+		E6610CA71C44E7D1008A8B2D /* UIImage+YL.m in Sources */ = {isa = PBXBuildFile; fileRef = E6610C9E1C44E7D1008A8B2D /* UIImage+YL.m */; };
+		E6610CAB1C4503AD008A8B2D /* YLTest0ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6610CAA1C4503AD008A8B2D /* YLTest0ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,11 +53,7 @@
 		E64EB6981C33CEC5009CA3B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E64EB69A1C33CEC5009CA3B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E64EB69B1C33CEC5009CA3B2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E64EB69D1C33CEC5009CA3B2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E64EB69E1C33CEC5009CA3B2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E64EB6A11C33CEC5009CA3B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E64EB6A31C33CEC5009CA3B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E64EB6A61C33CEC5009CA3B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E64EB6A81C33CEC5009CA3B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E64EB6AD1C33CEC5009CA3B2 /* YLSliderVCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YLSliderVCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E64EB6B11C33CEC5009CA3B2 /* YLSliderVCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLSliderVCTests.m; sourceTree = "<group>"; };
@@ -63,7 +61,6 @@
 		E64EB6B81C33CEC5009CA3B2 /* YLSliderVCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YLSliderVCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E64EB6BC1C33CEC5009CA3B2 /* YLSliderVCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLSliderVCUITests.m; sourceTree = "<group>"; };
 		E64EB6BE1C33CEC5009CA3B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E64EB6CD1C33D50C009CA3B2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E64EB6CE1C33D50C009CA3B2 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		E64EB6CF1C33D50C009CA3B2 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
 		E64EB6D01C33D50C009CA3B2 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -91,6 +88,23 @@
 		E64EB6E61C33D50C009CA3B2 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		E64EB6F51C33E86C009CA3B2 /* YLSliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSliderViewController.h; sourceTree = "<group>"; };
 		E64EB6F61C33E86C009CA3B2 /* YLSliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLSliderViewController.m; sourceTree = "<group>"; };
+		E6610C7D1C44C1B3008A8B2D /* YLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLViewController.h; sourceTree = "<group>"; };
+		E6610C7E1C44C1B3008A8B2D /* YLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLViewController.m; sourceTree = "<group>"; };
+		E6610C801C44C406008A8B2D /* YLSlider_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLSlider_Prefix.pch; sourceTree = "<group>"; };
+		E6610C811C44C483008A8B2D /* YLBaseUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLBaseUI.h; sourceTree = "<group>"; };
+		E6610C821C44C6B2008A8B2D /* YLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLView.h; sourceTree = "<group>"; };
+		E6610C831C44C6B2008A8B2D /* YLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLView.m; sourceTree = "<group>"; };
+		E6610C851C44C78F008A8B2D /* YLTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLTableView.h; sourceTree = "<group>"; };
+		E6610C861C44C78F008A8B2D /* YLTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLTableView.m; sourceTree = "<group>"; };
+		E6610C891C44C9AA008A8B2D /* YLUIDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLUIDefine.h; sourceTree = "<group>"; };
+		E6610C8B1C44CAD1008A8B2D /* YLDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLDefine.h; sourceTree = "<group>"; };
+		E6610C8C1C44E4C3008A8B2D /* YLSliderVcInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLSliderVcInfo.h; sourceTree = "<group>"; };
+		E6610C8D1C44E4C3008A8B2D /* YLSliderVcInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLSliderVcInfo.m; sourceTree = "<group>"; };
+		E6610C901C44E7D1008A8B2D /* YLCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLCategories.h; sourceTree = "<group>"; };
+		E6610C9D1C44E7D1008A8B2D /* UIImage+YL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+YL.h"; sourceTree = "<group>"; };
+		E6610C9E1C44E7D1008A8B2D /* UIImage+YL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YL.m"; sourceTree = "<group>"; };
+		E6610CA91C4503AD008A8B2D /* YLTest0ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLTest0ViewController.h; sourceTree = "<group>"; };
+		E6610CAA1C4503AD008A8B2D /* YLTest0ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLTest0ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,14 +157,15 @@
 			children = (
 				E64EB69A1C33CEC5009CA3B2 /* AppDelegate.h */,
 				E64EB69B1C33CEC5009CA3B2 /* AppDelegate.m */,
-				E64EB69D1C33CEC5009CA3B2 /* ViewController.h */,
-				E64EB69E1C33CEC5009CA3B2 /* ViewController.m */,
 				E64EB6F51C33E86C009CA3B2 /* YLSliderViewController.h */,
 				E64EB6F61C33E86C009CA3B2 /* YLSliderViewController.m */,
+				E6610CA91C4503AD008A8B2D /* YLTest0ViewController.h */,
+				E6610CAA1C4503AD008A8B2D /* YLTest0ViewController.m */,
+				E6610C8C1C44E4C3008A8B2D /* YLSliderVcInfo.h */,
+				E6610C8D1C44E4C3008A8B2D /* YLSliderVcInfo.m */,
 				E64EB6CC1C33D50C009CA3B2 /* Masonry */,
-				E64EB6A01C33CEC5009CA3B2 /* Main.storyboard */,
+				E6610C7B1C44C127008A8B2D /* YLLib */,
 				E64EB6A31C33CEC5009CA3B2 /* Assets.xcassets */,
-				E64EB6A51C33CEC5009CA3B2 /* LaunchScreen.storyboard */,
 				E64EB6A81C33CEC5009CA3B2 /* Info.plist */,
 				E64EB6971C33CEC5009CA3B2 /* Supporting Files */,
 			);
@@ -161,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				E64EB6981C33CEC5009CA3B2 /* main.m */,
+				E6610C801C44C406008A8B2D /* YLSlider_Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -186,7 +202,6 @@
 		E64EB6CC1C33D50C009CA3B2 /* Masonry */ = {
 			isa = PBXGroup;
 			children = (
-				E64EB6CD1C33D50C009CA3B2 /* Info.plist */,
 				E64EB6CE1C33D50C009CA3B2 /* MASCompositeConstraint.h */,
 				E64EB6CF1C33D50C009CA3B2 /* MASCompositeConstraint.m */,
 				E64EB6D01C33D50C009CA3B2 /* MASConstraint+Private.h */,
@@ -214,6 +229,49 @@
 				E64EB6E61C33D50C009CA3B2 /* ViewController+MASAdditions.m */,
 			);
 			path = Masonry;
+			sourceTree = "<group>";
+		};
+		E6610C7B1C44C127008A8B2D /* YLLib */ = {
+			isa = PBXGroup;
+			children = (
+				E6610C8F1C44E7D1008A8B2D /* Categories */,
+				E6610C881C44C919008A8B2D /* Define */,
+				E6610C7C1C44C127008A8B2D /* BaseUI */,
+			);
+			path = YLLib;
+			sourceTree = "<group>";
+		};
+		E6610C7C1C44C127008A8B2D /* BaseUI */ = {
+			isa = PBXGroup;
+			children = (
+				E6610C811C44C483008A8B2D /* YLBaseUI.h */,
+				E6610C7D1C44C1B3008A8B2D /* YLViewController.h */,
+				E6610C7E1C44C1B3008A8B2D /* YLViewController.m */,
+				E6610C821C44C6B2008A8B2D /* YLView.h */,
+				E6610C831C44C6B2008A8B2D /* YLView.m */,
+				E6610C851C44C78F008A8B2D /* YLTableView.h */,
+				E6610C861C44C78F008A8B2D /* YLTableView.m */,
+			);
+			path = BaseUI;
+			sourceTree = "<group>";
+		};
+		E6610C881C44C919008A8B2D /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				E6610C8B1C44CAD1008A8B2D /* YLDefine.h */,
+				E6610C891C44C9AA008A8B2D /* YLUIDefine.h */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		E6610C8F1C44E7D1008A8B2D /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				E6610C901C44E7D1008A8B2D /* YLCategories.h */,
+				E6610C9D1C44E7D1008A8B2D /* UIImage+YL.h */,
+				E6610C9E1C44E7D1008A8B2D /* UIImage+YL.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +341,7 @@
 				TargetAttributes = {
 					E64EB6931C33CEC5009CA3B2 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 2QPAC6ZL4L;
 					};
 					E64EB6AC1C33CEC5009CA3B2 = {
 						CreatedOnToolsVersion = 7.1;
@@ -319,10 +378,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E64EB6E71C33D50C009CA3B2 /* Info.plist in Resources */,
-				E64EB6A71C33CEC5009CA3B2 /* LaunchScreen.storyboard in Resources */,
 				E64EB6A41C33CEC5009CA3B2 /* Assets.xcassets in Resources */,
-				E64EB6A21C33CEC5009CA3B2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,20 +403,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6610C871C44C78F008A8B2D /* YLTableView.m in Sources */,
 				E64EB6EF1C33D50C009CA3B2 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				E6610C8E1C44E4C3008A8B2D /* YLSliderVcInfo.m in Sources */,
+				E6610CA71C44E7D1008A8B2D /* UIImage+YL.m in Sources */,
 				E64EB6F71C33E86C009CA3B2 /* YLSliderViewController.m in Sources */,
 				E64EB6ED1C33D50C009CA3B2 /* MASViewConstraint.m in Sources */,
 				E64EB6E81C33D50C009CA3B2 /* MASCompositeConstraint.m in Sources */,
 				E64EB6EE1C33D50C009CA3B2 /* NSArray+MASAdditions.m in Sources */,
-				E64EB69F1C33CEC5009CA3B2 /* ViewController.m in Sources */,
 				E64EB69C1C33CEC5009CA3B2 /* AppDelegate.m in Sources */,
 				E64EB6EB1C33D50C009CA3B2 /* MASLayoutConstraint.m in Sources */,
 				E64EB6991C33CEC5009CA3B2 /* main.m in Sources */,
+				E6610CAB1C4503AD008A8B2D /* YLTest0ViewController.m in Sources */,
 				E64EB6F11C33D50C009CA3B2 /* ViewController+MASAdditions.m in Sources */,
 				E64EB6F01C33D50C009CA3B2 /* View+MASAdditions.m in Sources */,
 				E64EB6EC1C33D50C009CA3B2 /* MASViewAttribute.m in Sources */,
+				E6610C7F1C44C1B3008A8B2D /* YLViewController.m in Sources */,
 				E64EB6E91C33D50C009CA3B2 /* MASConstraint.m in Sources */,
 				E64EB6EA1C33D50C009CA3B2 /* MASConstraintMaker.m in Sources */,
+				E6610C841C44C6B2008A8B2D /* YLView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,25 +455,6 @@
 			targetProxy = E64EB6B91C33CEC5009CA3B2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		E64EB6A01C33CEC5009CA3B2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E64EB6A11C33CEC5009CA3B2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E64EB6A51C33CEC5009CA3B2 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E64EB6A61C33CEC5009CA3B2 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E64EB6BF1C33CEC5009CA3B2 /* Debug */ = {
@@ -499,6 +541,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = YLSliderVC/YLSlider_prefix.pch;
 				INFOPLIST_FILE = YLSliderVC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.itcast.YLSliderVC;
@@ -510,6 +555,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = YLSliderVC/YLSlider_prefix.pch;
 				INFOPLIST_FILE = YLSliderVC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.itcast.YLSliderVC;
@@ -584,6 +632,7 @@
 				E64EB6C31C33CEC5009CA3B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E64EB6C41C33CEC5009CA3B2 /* Build configuration list for PBXNativeTarget "YLSliderVCTests" */ = {
 			isa = XCConfigurationList;
@@ -592,6 +641,7 @@
 				E64EB6C61C33CEC5009CA3B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E64EB6C71C33CEC5009CA3B2 /* Build configuration list for PBXNativeTarget "YLSliderVCUITests" */ = {
 			isa = XCConfigurationList;
@@ -600,6 +650,7 @@
 				E64EB6C91C33CEC5009CA3B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

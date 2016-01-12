@@ -1,0 +1,21 @@
+//
+//  PrefixHeader.pch
+//  YLSliderVC
+//
+//  Created by NaiveVDisk on 16/1/12.
+//  Copyright © 2016年 itcast. All rights reserved.
+//
+
+#ifdef __OBJC__
+
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+
+    #import "YLDefine.h"
+
+
+
+    
+
+
+#endif /* PrefixHeader_pch */
